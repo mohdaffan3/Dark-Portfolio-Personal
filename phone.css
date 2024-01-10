@@ -1,0 +1,243 @@
+@media screen and (max-width:800px) {
+
+    .heroSection .left-hero>h1 {
+        font-size: 2.2rem;
+    }
+
+    .rightnav ul,
+    .navbar {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .heroSection {
+        padding: 0px 0;
+        padding-left: 0;
+        height: 80vh;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .heroSection .right-hero img {
+        width: 3rem;
+    }
+
+    .rightnav ul a {
+        margin: 0;
+    }
+
+
+    .h-nav {
+        height: 50px;
+    }
+
+    .nav-visible {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navbar {
+        transition: all ease-in 0.5s;
+        padding-bottom: 15px;
+    }
+
+    .about-me {
+        gap: 10px;
+    }
+
+    .aboutme-Card {
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .aboutme-Card:hover {
+        box-shadow: 2px 2px transparent;
+    }
+
+
+    .aboutme-Card .left-about {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 50%;
+
+    }
+
+    .aboutme-Card .left-about>h2 {
+        font-size: 1.2rem;
+    }
+
+    .aboutme-Card .left-about p {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .aboutme-Card .right-about {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 50%;
+        padding: 5px 10px 0 10px;
+    }
+
+    .aboutme-Card .right-about .aboutMe-pic {
+        width: 48%;
+
+    }
+
+    .left-about:hover,
+    .right-about:hover {
+        box-shadow: 3px 3px 10px rgba(28, 28, 28, 0.324);
+    }
+
+    .project-container {
+        gap: 25px;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width:400px) {
+    .heroSection {
+        height: 80vh;
+    }
+
+    .contact-item {
+        flex-direction: column-reverse;
+        padding: 8px 2px;
+    }
+
+    .contact-item p {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 600;
+        flex-wrap: wrap;
+
+    }
+
+    .about-me {
+        padding: 15px 0 100px 0;
+
+    }
+
+    .skill-container {
+        gap: 35px;
+    }
+
+    .skill-row {
+        gap: 10px;
+    }
+
+    #skill-row1> :nth-child(1),
+    #skill-row2> :last-child {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:332px) {
+    .heroSection {
+        height: 75vh;
+    }
+
+    .heroSection .right-hero img {
+        display: none;
+    }
+
+    .heroSection .left-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content {
+        justify-content: center;
+    }
+
+
+    .section-Heading {
+        font-size: 1.65rem;
+    }
+
+    .aboutme-Card .left-about>h2 {
+        font-size: 0.89rem;
+    }
+
+    .aboutme-Card .left-about p {
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+    .contact-item .contact-text {
+
+        display: none;
+    }
+
+    .project-card {
+        width: 8rem;
+    }
+
+
+
+    #skill-row1> :nth-child(2),
+    #skill-row1> :nth-child(1),
+    #skill-row2> :nth-child(2),
+    #skill-row2> :last-child {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:160px) {
+    .heroSection {
+        height: 55vh;
+    }
+
+    .heroSection .left-hero>h1 {
+        font-size: 0.8rem;
+    }
+
+    .aboutme-Card .left-about {
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .project-card {
+        width: 5rem;
+    }
+
+    .bullet {
+        display: none;
+    }
+
+    #topAnchor {
+        display: none;
+    }
+
+    #skill-row1> :first-child,
+    #skill-row1 :nth-child(2),
+    #skill-row2> :last-child {
+        display: none;
+    }
+
+
+}

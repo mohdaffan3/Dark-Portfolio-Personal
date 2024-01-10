@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+/*Styling Navbar*/
+
+.navbar {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 9px;
+    background: radial-gradient(black, rgb(41, 41, 41));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 1px 10px 10px rgb(78, 74, 74);
+}
+
+.leftnav img {
+    filter: invert(0.9);
+    height: 25px;
+    cursor: pointer;
+}
+
+.leftnav img:hover {
+    filter: invert(0.5);
+    transition: all ease-out 0.2s;
+}
+
+.rightnav ul {
+    display: flex;
+    list-style: none;
+}
+
+.rightnav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 1.7px transparent;
+}
+
+.m-nav {
+    margin: 0 20px 0 0;
+}
+
+.rightnav ul a:hover {
+    color: gray;
+    transition: all 0.2s ease-in;
+    border-bottom: 1.7px solid white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.line {
+    background-color: White;
+    width: 20px;
+    height: 3.5px;
+    margin: 0 0 3px 0;
+}
+
+/*Styling Hero Section*/
+
+
+.heroSection {
+    width: 100%;
+    height: 110vh;
+    background: url('Images/hero.jpg');
+    background-size: cover;
+    opacity: 0.925;
+    color: white;
+    /* padding-left:  20px ; */
+
+}
+
+.hero-content {
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroSection .left-hero>h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(215, 215, 215, 0.3);
+}
+
+.heroSection .right-hero img {
+    border-radius: 50%;
+    width: 5rem;
+    padding: 5px;
+    filter: invert(0.7);
+    background-color: black;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.heroSection .right-hero img:hover {
+    background-color: rgb(230, 230, 230);
+    transition: all 1s ease-in-out;
+    filter: invert(0.9);
+
+
+
+}
+
+
+.section-Heading {
+    color: rgb(207, 207, 207);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+}
+
+
+/* Styling About me section  */
+
+.about-me {
+    width: 100%;
+    padding: 15px 0 30px 0;
+    background: linear-gradient(to right, rgb(18, 16, 16), rgba(28, 28, 28, 0.525));
+    /* background-color: rgb(104, 104, 104); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.aboutme-Card {
+    max-width: 75%;
+    /* min-height: 50vh; */
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px transparent;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.aboutme-Card:hover {
+    transition: all 0.1s ease-in;
+    box-shadow: 3px 3px 10px rgba(28, 28, 28, 0.324);
+}
+
+.aboutme-Card .left-about {
+    background-color: rgb(181, 181, 181);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 10px;
+    width: 70%;
+
+}
+
+.aboutme-Card .left-about h2 {
+    color: rgb(40, 40, 40);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.aboutme-Card .left-about h2:hover {
+    text-decoration: underline;
+
+}
+
+.aboutme-Card .left-about p {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.88rem;
+    padding: 5px;
+    font-weight: 500;
+    color: rgba(28, 28, 28, 0.822);
+}
+
+.aboutme-Card .right-about {
+    width: 40%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(rgb(123, 123, 123), rgb(39, 38, 38));
+
+}
+
+.aboutme-Card .right-about .aboutMe-pic {
+    width: 80%;
+    filter: grayscale(0.45);
+
+    /* filter: contrast(0.7); */
+}
+
+/* Styling Contact section*/
+.contact {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px 0 100px 0;
+    background-color: rgb(45, 45, 45);
+    /* opacity: 0.8; */
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact a:active {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.contact-list {
+    min-width: 75%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(104, 104, 104);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact-item:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(83, 83, 83);
+    color: rgb(49, 49, 49);
+
+}
+
+.contact-item p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(220, 220, 220);
+}
+
+.contact-item .contact-text {
+    color: rgb(255, 255, 255);
+}
+
+/* Styling Project Section*/
+.projects {
+    background-color: rgb(83, 83, 83);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0 100px 0;
+}
+
+.project-container {
+    max-width: 90%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    width: 11rem;
+    border-radius: 3px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    /* padding: 0 5px; */
+
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+
+.project-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: White;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card:hover .project-title {
+    transform: translateY(-23px);
+}
+
+
+/*Styling Skills section*/
+.skills {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px 0 100px 0;
+    background-color: rgb(45, 45, 45);
+    color: rgb(220, 220, 220);
+
+}
+
+.skill-container {
+    min-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-row {
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.skill-item>svg {
+    width: 2rem;
+    fill: white;
+    height: 1.8rem;
+}
+
+.skill-item:hover svg {
+    fill: rgb(151, 151, 151);
+}
+
+.skill-item:hover h5 {
+    color: rgb(110, 110, 110);
+}
+
+
+/* Styling Footer*/
+
+footer {
+    background: radial-gradient(black, rgb(41, 41, 41));
+    padding: 20px 5px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.957);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+.user-select {
+    user-select: none;
+}
+
+#toTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(173, 173, 173);
+    position: fixed;
+    bottom: 15px;
+    border-radius: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#toTop:hover {
+    transition: all 0.2s ease-in;
+    background-color: rgb(94, 94, 94);
+}
